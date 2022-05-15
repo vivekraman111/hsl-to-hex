@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm ls & npm test",
     "test": "npm run lint & tap --cov test",
     "lint": "standard"
   },
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/vivekraman111/hsl-to-hex#readme",
   "description": "Convert HSL colors to RGB colors in hex format.",
   "dependencies": {
+    "debug": "4.3.4",
     "hsl-to-rgb-for-reals": "1.1.1"
   },
   "devDependencies": {
